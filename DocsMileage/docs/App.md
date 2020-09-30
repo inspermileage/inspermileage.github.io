@@ -25,7 +25,11 @@
 
 ###### ** O Redux**
 
-<p align="justify">  Nosso app contém um gerenciador de states que funciona como um banco de dados local. Ele nos ajuda a guardar os id's do Car e Track, e Round cadastrados para que possamos realizar um post no banco de dados depois. Para isso, ele é composto de 4 principais arquivos. O primeiro, types.js, é onde podemos cadastrar os reducers, e, como temos que guardar informações de três tabelas diferentes, criamos tês reducers. O segundo arquivo,  actions.js, é onde configuramos as funções responsáveis  por "settar" a variável no reducer. Detalhe: o payload é o que você está passando como argumento, o que você quer que fique guardado, e o dispatch é responsável por efetivamente guardar. Por fim, no arquivo Reducer.js, colocamos todas as informações iniciais e o que os reducers vão conter. Além disso, foi feita uma função para registrar os reducers passando todo o estado inicial, mais os payloads recebidos. </p>
+<p align="justify">  Nosso app contém um gerenciador de states que funciona como um banco de dados local. Ele nos ajuda a guardar os id's do Car e Track, e Round cadastrados para que possamos realizar um post no banco de dados depois. Para isso, ele é composto de 3 principais arquivos:  </p>
+
+- Types.js: Onde podemos cadastrar os reducers, e, como temos que guardar informações de três tabelas diferentes, criamos tês reducers. 
+- Actions.js:  É nele que  configuramos as funções responsáveis  por "settar" a variável no reducer. Detalhe: o payload é o que você está passando como argumento, o que você quer que fique guardado, e o dispatch é responsável por efetivamente guardar. 
+- Reducer.js: Colocamos todas as informações iniciais e o que os reducers vão conter. Além disso, foi feita uma função para registrar os reducers passando todo o estado inicial, mais os payloads recebidos.
 
 
 ###### ** O Design**
