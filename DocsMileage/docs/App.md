@@ -79,7 +79,7 @@ Para realizar essa parte do projeto é necessário instalar:
 - JDK 8
 - Android Studio
 
-<p align="justify">  Para ter todas as dependências instaladas e configurações corretas, sugerimos seguir o link:  <https://react-native.rocketseat.dev/>, que possui um tutorial para os três tipos de sistemas operacionais (Windows, Mac e Linux).</p>
+Para ter todas as dependências instaladas e configurações corretas, sugerimos seguir o link:  <https://react-native.rocketseat.dev/>, que possui um tutorial para os três tipos de sistemas operacionais (Windows, Mac e Linux).
 
 
 ## Executando
