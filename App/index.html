@@ -81,17 +81,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#ultima-voragine" class="nav-link">Ultima voragine</a>
+            <li class="nav-item" data-level="1"><a href="#sistema-de-telemetria" class="nav-link">Sistema de Telemetria</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#cibos-partu" class="nav-link">Cibos partu</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#esset-et-quidem-tota" class="nav-link">Esset et quidem tota</a>
+            <li class="nav-item" data-level="2"><a href="#sobre-o-aplicativo" class="nav-link">Sobre o Aplicativo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#iuppiter-pervenit-protinus-quamvis" class="nav-link">Iuppiter Pervenit protinus quamvis</a>
+            <li class="nav-item" data-level="2"><a href="#dependencias" class="nav-link">Dependências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#executando" class="nav-link">Executando</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -102,43 +102,66 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="ultima-voragine">Ultima voragine</h1>
-<h2 id="cibos-partu">Cibos partu</h2>
-<p>Lorem markdownum ingemuit in falsae montibus sceleris caelo cornibus haec,
-conata Deiphobum respondit virtutis in genitor <em>alter</em>, conpagibus. Epulis
-tempora? Et crine regis nomen <em>acutae cervix</em> terrae. Pinu paruit iaculi? Pocula
-nemorale lepori.</p>
-<p>Prodidit mei inquit habebat egredior est quae ferventes magicae et nati Pyreneus
-vestigia Amor ille muneris aquae capiant. <a href="http://caelumflexerat.io/">Referunt
-ita</a> facem hoc testor <em>abdita</em> fluctibus praebebat
-terrarum o fecit carendum factum Oeclides ignaram invitis; <strong>ius</strong> totas
-totaque. Arbor fraterni regia! Atrides talibus germanam poena, et exigis
-thalamoque Pyramus ex haec ait blandas vestem. Parmam nova et vulnere omnes.</p>
-<h2 id="esset-et-quidem-tota">Esset et quidem tota</h2>
-<p>Nisi averso est cera soleo nomine ore repetit faciem sponte Maenaliosque
-genetrix cadit medicata. Frequens oculis ales habent ac dulcedine aureus, si
-crinis Argolicas Caenea; si amor.</p>
-<p>Reflectitur <a href="http://de.io/">spectare matutina</a> adamante et tempora, tetenderat
-adsuetos <a href="http://quater.net/herbis-legebant">experientia</a>. Parentis bracchia
-invidiae solis levi super semper locuturo <em>puerilibus</em> numquam pennis nimbosi.
-Et terra e <em>spatiantia ille</em> alimenta mihi, et animo. Saltem curvantur in
-equinis <a href="http://www.eritnostri.com/continuamcrebros.aspx">summusque nova</a>,
-passibus te tenetur iaculum longe ius sustinet omnia labor; per. Herba Lacinia
-evanuit Cycnus vulgusque meum in datae tua.</p>
-<h2 id="iuppiter-pervenit-protinus-quamvis">Iuppiter Pervenit protinus quamvis</h2>
-<p>Ipse viros hunc barbam videres habent; <a href="http://digrediturad.com/tela-usum">pectore respiramen
-comes</a>. Tardata vix manum pendeat requirit.
-Cum <a href="http://nil.io/hoc.html">miser pressos</a> creaverat <strong>minata</strong> nutrici.
-Titulos pompae, non tunc ante membra terra cum meritorum foret rettulit tamen.</p>
-<p>Credite est dum ignibus sive <a href="http://cogentenil.org/sinusque">male cucurri
-gelidoque</a> sua sicut moenia quae. Solumque
-pariterque, adsis Fortunae Phineus <a href="http://anguicomae.io/ornabant">Othrys
-incola</a> intraverat umeris est pulsat habebat, in
-retexit igitur. Glaebis se responsa illos Phaethon capiebant anguem: illis
-lanigerosque obiecit. Tellus Iuno. Pro maris mea refero, cui morte conceptus
-<strong>cui</strong>.</p>
-<p>Neve alite brevem et necem suis tenuit infregit de ureret tamen Victoria;
-ratione. Et tenuit sedibus, pectoraque danda, tuum fiant diffudit <em>caesorum</em>.</p></div>
+<h1 id="sistema-de-telemetria">Sistema de Telemetria</h1>
+<p><hr> </p>
+<h5 id="repositorio-httpsgithubcominspermileagedashboard-pilot"><strong>Repositório</strong> : <a href="https://github.com/inspermileage/dashboard-pilot">https://github.com/inspermileage/dashboard-pilot</a></h5>
+<p><br></p>
+<h2 id="sobre-o-aplicativo">Sobre o Aplicativo</h2>
+<p align="justify">  Nosso aplicativo é responsável por mostrar os dados mais importantes que o carro fornece para o piloto  através de uma comunicação serial com o arduino. Além disso, após recebermos esses dados, é necessário realizar requisições HTTP para poder armazená-los e acessá-los no nosso banco de dados. 
+</p>
+
+<h6 id="organizacao-de-pastas"><strong> Organização de Pastas</strong></h6>
+<ul>
+<li>Components: principais elementos que podem ser utilizados em várias páginas, como dropdown.</li>
+<li>Pages: Dividida em duas partes, a de cadastro gerais da corrida e a com a interface do piloto.</li>
+<li>Themes: contém um arquivo com as cores utilizadas no app.</li>
+<li>Functions: possui funções interessantes para o projeto, junto com a conexão do banco de dados (axios).</li>
+<li>assets: imagens importantes.</li>
+<li>Store: possui um gerenciador de states (Redux).</li>
+</ul>
+<h6 id="o-redux"><strong> O Redux</strong></h6>
+<p align="justify">  Nosso app contém um gerenciador de states que funciona como um banco de dados local. Ele nos ajuda a guardar os id's do Car e Track, e Round cadastrados para que possamos realizar um post no banco de dados depois. Para isso, ele é composto de 4 principais arquivos. O primeiro, types.js, é onde podemos cadastrar os reducers, e, como temos que guardar informações de três tabelas diferentes, criamos tês reducers. O segundo arquivo,  actions.js, é onde configuramos as funções responsáveis  por "settar" a variável no reducer. Detalhe: o payload é o que você está passando como argumento, o que você quer que fique guardado, e o dispatch é responsável por efetivamente guardar. Por fim, no arquivo Reducer.js, colocamos todas as informações iniciais e o que os reducers vão conter. Além disso, foi feita uma função para registrar os reducers passando todo o estado inicial, mais os payloads recebidos. </p>
+
+<h6 id="o-design"><strong> O Design</strong></h6>
+<p>Pensando em armazenar os dados de maneira correta, as primeiras páginas do projeto são destinadas para o cadastro do Carro, Pista, e Round: </p>
+<p><br>
+<div style="text-align:center"> </p>
+<p><img src="/imgs/Car.png"  width=500/>
+</div> </p>
+<p><br> 
+<div style="text-align:center" > </p>
+<p><img src="/imgs/Track.png"  width=500 />
+</div> </p>
+<p><br> 
+<div style="text-align:center"> </p>
+<p><img src="/imgs/Round.png"  width=500 />
+</div> </p>
+<p><br></p>
+<p>Enfim, temos a interface principal com o piloto: </p>
+<p><br> 
+<div style="text-align:center"> </p>
+<p><img src="/imgs/NavBar.png"  width=500 />
+</div> </p>
+<p><br> 
+<div style="text-align:center"> </p>
+<p><img src="/imgs/Main.png"   width=500/>
+</div> </p>
+<h2 id="dependencias">Dependências</h2>
+<p>Para realizar essa parte do projeto é necessário instalar:</p>
+<ul>
+<li>Yarn</li>
+<li>Node.js</li>
+<li>Chocolatey (Windows)</li>
+<li>Homebrew (Mac)</li>
+<li>JDK 8</li>
+<li>Android Studio</li>
+</ul>
+<p align="justify">  Para ter todas as dependências instaladas e configurações corretas, sugerimos seguir o link:  <https://react-native.rocketseat.dev/>, que possui um tutorial para os três tipos de sistemas operacionais (Windows, Mac e Linux).</p>
+
+<h2 id="executando">Executando</h2>
+<pre><code>yarn install
+react-native run-android
+</code></pre></div>
             </div>
         </div>
 
