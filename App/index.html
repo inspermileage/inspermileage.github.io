@@ -120,8 +120,13 @@
 <li>Store: possui um gerenciador de states (Redux).</li>
 </ul>
 <h6 id="o-redux"><strong> O Redux</strong></h6>
-<p align="justify">  Nosso app contém um gerenciador de states que funciona como um banco de dados local. Ele nos ajuda a guardar os id's do Car e Track, e Round cadastrados para que possamos realizar um post no banco de dados depois. Para isso, ele é composto de 4 principais arquivos. O primeiro, types.js, é onde podemos cadastrar os reducers, e, como temos que guardar informações de três tabelas diferentes, criamos tês reducers. O segundo arquivo,  actions.js, é onde configuramos as funções responsáveis  por "settar" a variável no reducer. Detalhe: o payload é o que você está passando como argumento, o que você quer que fique guardado, e o dispatch é responsável por efetivamente guardar. Por fim, no arquivo Reducer.js, colocamos todas as informações iniciais e o que os reducers vão conter. Além disso, foi feita uma função para registrar os reducers passando todo o estado inicial, mais os payloads recebidos. </p>
+<p align="justify">  Nosso app contém um gerenciador de states que funciona como um banco de dados local. Ele nos ajuda a guardar os id's do Car e Track, e Round cadastrados para que possamos realizar um post no banco de dados depois. Para isso, ele é composto de 3 principais arquivos:  </p>
 
+<ul>
+<li>Types.js: Onde podemos cadastrar os reducers, e, como temos que guardar informações de três tabelas diferentes, criamos tês reducers. </li>
+<li>Actions.js:  É nele que  configuramos as funções responsáveis  por "settar" a variável no reducer. Detalhe: o payload é o que você está passando como argumento, o que você quer que fique guardado, e o dispatch é responsável por efetivamente guardar. </li>
+<li>Reducer.js: Colocamos todas as informações iniciais e o que os reducers vão conter. Além disso, foi feita uma função para registrar os reducers passando todo o estado inicial, mais os payloads recebidos.</li>
+</ul>
 <h6 id="o-design"><strong> O Design</strong></h6>
 <p>Pensando em armazenar os dados de maneira correta, as primeiras páginas do projeto são destinadas para o cadastro do Carro, Pista, e Round: </p>
 <p><br>
