@@ -9,8 +9,9 @@
 
 ## Sobre o Backend
 
-<p align="justify">  Nosso Backend é responsável por armazenar todos os dados que são enviados do arduino para o nosso [App](https://inspermileage.github.io/App/). Esses dados serão a base para a nossa Dashboard para a equipe, podendo analisar o desempenho do carro durante a corrida e realizar análises de melhorias e procuras de falhas no veículo. 
-</p>
+Nosso Backend é responsável por armazenar todos os dados que são enviados do arduino para o nosso [App](/App).
+Esses dados serão a base para a nossa Dashboard para a equipe, podendo analisar o desempenho do carro durante a corrida e realizar análises de melhorias e procuras de falhas no veículo. 
+
 ###### ** Organização de Pastas**
 
 
@@ -43,9 +44,9 @@ Os testes de unidade presentes na pasta /teste podem ser verificados pelo seguin
 Para realizar essa parte do projeto é necessário instalar:
 
 - Obrigatórios: [Python 3.6 (ou superior)](https://www.python.org/downloads/), pipenv
- (`pip install pipenv`) e [PostgreSQL](https://www.postgresql.org/download/)
-- Opcionais: [Docker](https://www.docker.com/products/docker-desktop) e 
-[Docker Compose](https://docs.docker.com/compose/install/)
+ (`pip install pipenv`) e 
+- Opcionais: [Docker](https://www.docker.com/products/docker-desktop), 
+[Docker Compose](https://docs.docker.com/compose/install/) e [PostgreSQL](https://www.postgresql.org/download/)
 
 
 ## Executando
